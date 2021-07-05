@@ -67,6 +67,8 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-el {
@@ -90,14 +92,7 @@ body {
   min-width: 90px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-}
-
-.navbar-el__link_l {
-  border-radius: 0px 0px 0px 10px;
-}
-
-.navbar-el__link_r {
-  border-radius: 0px 0px 10px 0px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .navbar-el__link:hover {

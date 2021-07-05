@@ -1,0 +1,214 @@
+@import 'variables';
+
+html {
+    font-size: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $light-col;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $light-col;
+    background-image: url(/img/bkg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.wrapper {
+    max-width: 1270px;
+    min-height: 100vmin;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 0;
+    background-color: rgba(129, 104, 170, 0.8);
+    border-radius: 0px 0px 10px 10px;
+    width: inherit;
+    left: 0;
+    right: 0;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 4rem;
+    padding: 20px;
+    font-weight: 400;
+    color: $main-col;
+    letter-spacing: 0.7rem;
+    text-align: center;
+}
+
+.header__annotation {
+    font-weight: 400;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    width: 60%;
+    color: $light-col;
+    min-width: 320px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-el {
+    flex: 1 0;
+    display: flex;
+    &__link {
+        text-align: center;
+        text-transform: lowercase;
+        letter-spacing: 0.5rem;
+        padding: 10px;
+        flex: 1 0;
+        width: inherit;
+        min-width: 90px;
+        transition: 0.3s ease;
+        border-radius: 0px 0px 10px 10px;
+        &:hover {
+            background-color: $dark-col;
+        }
+    }
+}
+
+.struct {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.block-wrap {
+    margin: 10px;
+    display: flex;
+}
+
+.struct-block {
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    text-align: left;
+    color: $dark-col;
+    display: flex;
+    transition: 0.5s ease;
+    &:hover {
+        background-color:rgba(255, 255, 255, 0.2);
+        color: $light-col;
+    }
+    &:hover &__av {
+        border: 4px solid rgba(255, 255, 255, 0.7);
+    }
+    &:hover &-data__name {
+        color: $light-col;
+    }
+    &__av {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 4px solid rgba(255, 255, 255, 0);
+    }
+    &-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        font-size: 1.9rem;
+        padding: 10px;
+        &__name {
+            font-weight: 600;
+            color: #604682;
+            flex-wrap: nowrap;
+        }
+        &__rank {
+            font-weight: 400;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+        }
+    }
+}
+
+.leader {
+    display: flex;
+    justify-content: center;
+}
+
+.struct-block-lead {
+    background-color: rgba(169, 148, 196, 0.8);
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    align-items: center;
+    width: 300px;
+    text-align: left;
+    color: $dark-col;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    &:hover {
+        background-color:rgba(255, 255, 255, 0.2);
+        color: $light-col;
+    }
+    &:hover &__av {
+        border: 4px solid rgba(255, 255, 255, 0.7);
+    }
+    &:hover &-data__name {
+        color: $light-col;
+    }
+    &__av {
+        width: 70px;
+        height: 70px;
+        border: 4px solid rgba(255, 255, 255, 0);
+        border-radius: 50%;
+    }
+    &-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        font-size: 2.1rem;
+        padding: 10px;
+        &__name {
+            font-weight: 600;
+            color: $dark-col;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.section {
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 0 40px 0;
+    &__title {
+        text-align: center;
+        font-size: 4rem;
+        padding: 20px;
+        text-transform: lowercase;
+        letter-spacing: 0.7rem;
+    }
+    &_dark {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
