@@ -28,7 +28,6 @@ body {
 .wrapper {
     max-width: 1270px;
     min-height: 100vmin;
-    width: 98%;
     margin: 0 auto;
 }
 
@@ -52,13 +51,25 @@ body {
         height: 120px;
     }
     &__title {
-        margin: 0;
+        margin-left: -40px;
+        margin-right: 20px;
         font-size: 4.1rem;
-        padding: 10px 30px;
+        padding: 10px 0px 10px 0px;
         font-weight: 600;
         color: $light-col;
         letter-spacing: 0.2rem;
         text-align: center;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: -5%;
+            bottom: 0.6rem;
+            width: 110%;
+            height: 0.4rem;
+            background: white;
+            z-index: 1;
+        }
     }
     &__annotation {
         font-weight: 400;
@@ -67,8 +78,14 @@ body {
         padding: 0 10px 10px 10px;
         max-width: 500px;
         color: $light-col;
-        min-width: 310px;
+        min-width: 300px;
         text-align: center;
+    }
+}
+
+@media (max-width: 374px) {
+    .head-block__title {
+        margin: 0;
     }
 }
 
@@ -88,7 +105,8 @@ body {
         text-transform: lowercase;
         font-weight: 600;
         letter-spacing: 0.5rem;
-        padding: 10px;
+        padding: 16px;
+        font-size: 2rem;
         flex: 1 0;
         width: inherit;
         min-width: 90px;
@@ -115,7 +133,7 @@ body {
         height: 100px;
     }
     &__text {
-        font-size: 4.1rem;
+        font-size: 3.1rem;
         letter-spacing: 0.3rem;
         text-transform: lowercase;
         font-weight: 600;
@@ -127,7 +145,7 @@ body {
 }
 
 .struct {
-    max-width: 1000px;
+    max-width: 989px;
     margin: 0 auto;
 }
 
@@ -148,7 +166,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     align-items: center;
-    width: 300px;
+    width: 290px;
     justify-content: space-between;
     text-align: left;
     color: $dark-col;
@@ -186,7 +204,7 @@ body {
         }
         &__rank {
             font-weight: 400;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             letter-spacing: 1px;
             text-transform: lowercase;
         }
@@ -203,7 +221,7 @@ body {
     border-radius: 10px;
     padding: 20px 10px 20px 10px;
     align-items: center;
-    width: 300px;
+    width: 290px;
     text-align: left;
     color: $dark-col;
     display: flex;
@@ -250,7 +268,7 @@ body {
     padding: 0px 0 40px 0;
     &__title {
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.1rem;
         padding: 20px;
         font-weight: 600;
         text-transform: lowercase;
