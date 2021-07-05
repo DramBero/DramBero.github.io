@@ -124,7 +124,8 @@ body {
   text-transform: lowercase;
   font-weight: 600;
   letter-spacing: 0.5rem;
-  padding: 10px;
+  padding: 16px;
+  font-size: 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 0;
           flex: 1 0;
@@ -164,7 +165,7 @@ body {
 }
 
 .tg__text {
-  font-size: 4.1rem;
+  font-size: 3.1rem;
   letter-spacing: 0.3rem;
   text-transform: lowercase;
   font-weight: 600;
@@ -363,7 +364,7 @@ body {
 
 .section__title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.1rem;
   padding: 20px;
   font-weight: 600;
   text-transform: lowercase;
