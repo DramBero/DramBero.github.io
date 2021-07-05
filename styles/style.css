@@ -39,23 +39,38 @@ body {
   right: 0;
 }
 
-.header__title {
+.head-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head-block__title {
   margin: 0;
-  font-size: 4rem;
-  padding: 20px;
-  font-weight: 400;
-  color: #010954;
-  letter-spacing: 0.7rem;
+  font-size: 4.1rem;
+  padding: 10px 30px;
+  font-weight: 600;
+  color: #000115;
+  letter-spacing: 0.2rem;
   text-align: center;
 }
 
-.header__annotation {
+.head-block__annotation {
   font-weight: 400;
-  margin: 10px auto;
-  padding-bottom: 10px;
-  width: 60%;
+  font-size: 1.3rem;
+  margin: 10px;
+  padding: 0 10px 10px 10px;
+  max-width: 500px;
   color: #fff9fa;
-  min-width: 320px;
+  min-width: 310px;
   text-align: center;
 }
 
@@ -83,6 +98,7 @@ body {
 .navbar-el__link {
   text-align: center;
   text-transform: lowercase;
+  font-weight: 600;
   letter-spacing: 0.5rem;
   padding: 10px;
   -webkit-box-flex: 1;
@@ -99,7 +115,47 @@ body {
   background-color: #000115;
 }
 
+.tg {
+  margin: 10px 0 10px 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.tg__icon {
+  width: 100px;
+  height: 100px;
+}
+
+.tg__text {
+  font-size: 4.1rem;
+  letter-spacing: 0.3rem;
+  text-transform: lowercase;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.tg:hover {
+  background-color: #000115;
+}
+
 .struct {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.struct-low {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,8 +332,9 @@ body {
   text-align: center;
   font-size: 4rem;
   padding: 20px;
+  font-weight: 600;
   text-transform: lowercase;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.3rem;
 }
 
 .section_dark {
