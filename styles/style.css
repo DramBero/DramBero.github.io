@@ -62,6 +62,7 @@ body {
   margin-left: -40px;
   margin-right: 20px;
   font-size: 4.1rem;
+  font-family: 'Playfair Display SC', serif;
   padding: 10px 0px 10px 0px;
   font-weight: 600;
   color: #fff9fa;
@@ -124,6 +125,7 @@ body {
   text-transform: lowercase;
   font-weight: 600;
   letter-spacing: 0.5rem;
+  font-family: 'Playfair Display SC', serif;
   padding: 16px;
   font-size: 2rem;
   -webkit-box-flex: 1;
@@ -165,7 +167,8 @@ body {
 }
 
 .tg__text {
-  font-size: 3.1rem;
+  font-size: 2.6rem;
+  font-family: 'Playfair Display SC', serif;
   letter-spacing: 0.3rem;
   text-transform: lowercase;
   font-weight: 600;
@@ -364,11 +367,15 @@ body {
 
 .section__title {
   text-align: center;
-  font-size: 3.1rem;
+  font-size: 2.6rem;
+  font-family: 'Playfair Display SC', serif;
   padding: 20px;
   font-weight: 600;
-  text-transform: lowercase;
   letter-spacing: 0.3rem;
+}
+
+.section-body {
+  padding: 0 10%;
 }
 
 .section_dark {
