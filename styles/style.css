@@ -93,7 +93,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 374px) {
+@media (max-width: 391px) {
   .head-block__title {
     margin: 0;
   }
