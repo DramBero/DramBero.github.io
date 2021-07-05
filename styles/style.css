@@ -171,6 +171,7 @@ body {
   font-family: 'Playfair Display SC', serif;
   letter-spacing: 0.3rem;
   text-transform: lowercase;
+  text-align: center;
   font-weight: 600;
   padding: 20px;
 }
