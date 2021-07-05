@@ -32,7 +32,7 @@ body {
 
 .header {
   margin: 0;
-  background-color: rgba(129, 104, 170, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0px 0px 10px 10px;
   width: inherit;
   left: 0;
@@ -64,7 +64,7 @@ body {
   font-size: 4.1rem;
   padding: 10px 30px;
   font-weight: 600;
-  color: #000115;
+  color: #fff9fa;
   letter-spacing: 0.2rem;
   text-align: center;
 }
@@ -118,7 +118,8 @@ body {
 }
 
 .navbar-el__link:hover {
-  background-color: #000115;
+  background-color: #fff9fa;
+  color: #000115;
 }
 
 .tg {
