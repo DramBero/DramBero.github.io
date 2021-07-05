@@ -73,10 +73,10 @@ body {
 .head-block__title::after {
   content: "";
   position: absolute;
-  left: -13px;
-  bottom: 6px;
-  width: 280px;
-  height: 5px;
+  left: -1.3rem;
+  bottom: 0.6rem;
+  width: 28rem;
+  height: 0.5rem;
   background: white;
   z-index: 1;
 }
