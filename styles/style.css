@@ -73,9 +73,9 @@ body {
 .head-block__title::after {
   content: "";
   position: absolute;
-  left: -1.3rem;
+  left: -5%;
   bottom: 0.6rem;
-  width: 28rem;
+  width: 110%;
   height: 0.5rem;
   background: white;
   z-index: 1;
