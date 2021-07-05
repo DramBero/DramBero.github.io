@@ -88,7 +88,7 @@ body {
   padding: 0 10px 10px 10px;
   max-width: 500px;
   color: #fff9fa;
-  min-width: 310px;
+  min-width: 300px;
   text-align: center;
 }
 
@@ -208,7 +208,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
+  width: 290px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -270,7 +270,7 @@ body {
 
 .struct-block-data__rank {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   text-transform: lowercase;
 }
@@ -291,7 +291,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 300px;
+  width: 290px;
   text-align: left;
   color: #000115;
   display: -webkit-box;
