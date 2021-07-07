@@ -191,6 +191,7 @@ body {
 }
 
 .struct {
+  padding-top: 20px;
   max-width: 989px;
   margin: 0 auto;
 }
@@ -318,15 +319,25 @@ body {
 }
 
 .section__title {
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.1rem;
-  padding: 20px;
+  font-size: 2.7rem;
+  margin: auto;
+  max-width: 700px;
+  padding: 20px 5%;
   font-weight: 600;
 }
 
+.section__line {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section__line_dark {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .section-body {
-  padding: 0 5%;
+  padding: 20px 5%;
   font-size: 2rem;
   font-family: 'Old Standard TT', serif;
   font-weight: 400;
