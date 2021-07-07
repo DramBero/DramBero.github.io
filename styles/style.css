@@ -1,5 +1,6 @@
 html {
   font-size: 10px;
+  font-family: 'Old Standard TT', serif;
 }
 
 ul {
@@ -14,7 +15,6 @@ a {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #fff9fa;
   background-image: url(/img/bkg.jpg);
@@ -25,7 +25,7 @@ body {
 
 .wrapper {
   max-width: 1270px;
-  min-height: 100vmin;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -52,26 +52,40 @@ body {
           align-items: center;
 }
 
-.head-block__logo {
+.head-block-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head-block-logo__img {
   padding: 10px;
   width: 120px;
   height: 120px;
 }
 
-.head-block__title {
+.head-block-logo__title {
   margin-left: -40px;
   margin-right: 20px;
   font-size: 4.1rem;
   font-family: 'Playfair Display SC', serif;
   padding: 10px 0px 10px 0px;
   font-weight: 600;
-  color: #fff9fa;
   letter-spacing: 0.2rem;
+  color: #fff9fa;
   text-align: center;
   position: relative;
 }
 
-.head-block__title::after {
+.head-block-logo__title::after {
   content: "";
   position: absolute;
   left: -5%;
@@ -84,17 +98,16 @@ body {
 
 .head-block__annotation {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin: 10px;
   padding: 0 10px 0px 10px;
   max-width: 500px;
   color: #fff9fa;
-  min-width: 300px;
   text-align: center;
 }
 
 @media (max-width: 391px) {
-  .head-block__title {
+  .head-block-logo__title {
     margin: 0;
   }
 }
@@ -122,12 +135,11 @@ body {
 
 .navbar-el__link {
   text-align: center;
-  text-transform: lowercase;
   font-weight: 600;
-  letter-spacing: 0.5rem;
-  font-family: 'Playfair Display SC', serif;
+  letter-spacing: 0.2rem;
+  font-family: 'Montserrat', sans-serif;
   padding: 16px;
-  font-size: 2rem;
+  font-size: 2.1rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 0;
           flex: 1 0;
@@ -167,10 +179,8 @@ body {
 }
 
 .tg__text {
-  font-size: 2.6rem;
-  font-family: 'Playfair Display SC', serif;
-  letter-spacing: 0.3rem;
-  text-transform: lowercase;
+  font-size: 3.1rem;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 600;
   padding: 20px;
@@ -201,6 +211,8 @@ body {
 
 .block-wrap {
   margin: 10px;
+  max-width: 310px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +225,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 290px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -273,11 +286,19 @@ body {
       flex-wrap: nowrap;
 }
 
+.struct-block-data__name_lead {
+  color: #000115;
+}
+
 .struct-block-data__rank {
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 1px;
   text-transform: lowercase;
+}
+
+.struct-block_lead {
+  background-color: rgba(169, 148, 196, 0.8);
 }
 
 .leader {
@@ -289,76 +310,6 @@ body {
           justify-content: center;
 }
 
-.struct-block-lead {
-  background-color: rgba(169, 148, 196, 0.8);
-  border-radius: 10px;
-  padding: 20px 10px 20px 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 290px;
-  text-align: left;
-  color: #000115;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.struct-block-lead:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff9fa;
-}
-
-.struct-block-lead:hover .struct-block-lead__av {
-  border: 4px solid #a994c4;
-}
-
-.struct-block-lead:hover .struct-block-lead-data__name {
-  color: #fff9fa;
-}
-
-.struct-block-lead__av {
-  width: 70px;
-  height: 70px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  border: 4px solid rgba(255, 255, 255, 0);
-  border-radius: 50%;
-}
-
-.struct-block-lead-data {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-  font-size: 2.1rem;
-  padding: 10px;
-}
-
-.struct-block-lead-data__name {
-  font-weight: 600;
-  color: #000115;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
 .section {
   margin: 20px 0 0 0;
   border-radius: 10px;
@@ -368,18 +319,24 @@ body {
 
 .section__title {
   text-align: center;
-  font-size: 2.6rem;
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.1rem;
   padding: 20px;
   font-weight: 600;
-  letter-spacing: 0.3rem;
 }
 
 .section-body {
-  padding: 0 10%;
+  padding: 0 5%;
+  font-size: 2rem;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+  margin: auto;
+  text-align: justify;
+  max-width: 700px;
 }
 
 .section_dark {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000115;
 }
 /*# sourceMappingURL=style.css.map */
