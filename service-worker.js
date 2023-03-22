@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.06f3b0cdac63099d3937e55c86153be2.js"
+  "/precache-manifest.f60e170eb435d57cd5c9e8a4ea0ce408.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "teoqed"});
